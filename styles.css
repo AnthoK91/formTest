@@ -1,0 +1,25 @@
+
+body {
+    background-color: lightgrey;
+    margin: 0px;
+}
+
+.base {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox {
+    min-height: 20px;
+
+}
+
+#leftImg {
+    margin: 0px;
+    padding: 0px;
+    max-height: 100vh;
+}
