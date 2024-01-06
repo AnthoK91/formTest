@@ -4,14 +4,75 @@ body {
     margin: 0px;
 }
 
+.form {
+    background-color: #fff;
+    opacity: .8;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
 .base {
     display: flex;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#e052a0,#f15c41)!important;
+    border-radius: 3px;
+    padding: 16px 18px 15px;
+    white-space: nowrap;
+}
+
+button:hover {
+        background-color: #e6375a;
+        background-image: none!important;
+}
+
+.passMatch {
+    font-size: small;
+    font-weight: 700;
+    font-variant: small-caps;
+    color: red;
+}
+
+input {
+    margin: 3px;
+    min-height: 10px;
+}
+
+input:valid {
+border-color: green;
+}
+
+input:invalid {
+border-color: red;
 }
 
 .form {
     display: flex;
     flex-direction: column;
 }
+
+.topForm {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottomForm {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
 
 .formBox {
     min-height: 20px;
@@ -22,4 +83,9 @@ body {
     margin: 0px;
     padding: 0px;
     max-height: 100vh;
+}
+
+.loginButton {
+    margin-top: 3px;
+    margin-left: 10px;
 }

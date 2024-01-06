@@ -19,19 +19,25 @@
                 <p class="topText">You <i>know</i> you want to.</p>
             </div>
         <div class="form">
-            <form>
+            <form action="/submit" method="post">
+                <div class="topForm">
             <label for="fname">First Name</label><input class="formBox" type="text" id="fname" required>
             <label for="lname">Last Name</label><input class="formBox" type="text" id="lname">
             <label for="email">Email</label><input class="formBox" type="email" id="email">
+                </div>
+                <div class="bottomForm">
             <label for="phone">Phone Number</label><input class="formBox" type="number" id="phone">
-            <label for="pass">Password</label><input class="formBox" type="password" id="pass">
-            <label for="passconf">Confirm Password</label><input class="formBox" type="password" id="passconf">
+            <div id="password">
+                <label for="pass">Password</label><input class="formBox" type="password" minlength="5"  id="pass" required>
+            </div>
+            <label for="passconf">Confirm Password</label><input class="formBox" type="password" id="passConf">
         </div>
         <div class="loginButton">
-            <button href="/login">create account</button>
+            <button type="button" id="submit">CREATE ACCOUNT</button>
             <p class="loginText">Already have an account?  <a href="/login">log in</a></p>
         </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
